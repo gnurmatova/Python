@@ -14,7 +14,7 @@ for i in range(1,21):
 	file_ob = open("fortune"+str(k)+".txt", "w")
 	resp = urllib.urlopen("http://www.iheartquotes.com/api/v1/random")
 	web_pg = resp.read()
- 	file_ob.write(web_pg)
+	file_ob.write(web_pg)
 	file_ob.close()
 
 	file_ob = open("fortune"+str(k)+".log", "w")
