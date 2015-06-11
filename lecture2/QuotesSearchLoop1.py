@@ -85,5 +85,5 @@ query=input("query:")
 print(query)
 for quote in data_list:
 	found_at = quote.find(query)
-	if( found_at > 0):
+	if( found_at >= 0):
 		print("Found:", "..."+quote[found_at:found_at+50], "...")
