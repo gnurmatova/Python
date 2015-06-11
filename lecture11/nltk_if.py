@@ -37,5 +37,12 @@ Yours is the Earth and everything that’s in it,
     And—which is more—you’ll be a Man, my son!
 '''
 
-npoem = nltk.Text(nltk.word_tokenize(poem))
+tokenized_poem=nltk.word_tokenize(poem)
+print("Number of words")
+print(len(tokenized_poem))
+
+
+npoem = nltk.Text(tokenized_poem)
+print("Searching for talk:")
 npoem.concordance("talk")
+
